@@ -1,0 +1,138 @@
+body{
+  margin: 0;
+  padding:0;
+  background: #A3B4B5;
+}
+ul, li, p{
+  padding: 0;
+  margin:0;
+}
+
+#wrapper_M{
+  min-width: 320px;
+  max-width: 640px;
+  height: 458px;
+  margin: 4% auto 10px auto;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  box-shadow: 0px 0px 22px 1px rgba(3,0,3,1);
+}
+
+header{
+  font-size: 30px;
+  padding: 10px;
+  background: #AF5807;
+  font-family: 'Lobster', cursive;
+}
+
+#left_M, #right_M{
+  width: 320px;
+  height: 400px;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #E9D6C4;
+}
+
+  /* <img>*/
+  #hangmanImg_M{
+    width: 200px;
+    display: block;
+    margin: 0 auto;   
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 1px rgba(3,0,3,1);
+  }
+
+  /* <ul>*/
+  #word_M{
+    list-style: none;
+  }
+    #word_M li{
+      display: inline;
+      float: left;
+      width: 22px;
+      height: 30px;
+      border-bottom: 1px solid black; 
+      margin: 6px;
+      text-transform: uppercase;
+    }
+
+  /* <div>*/
+  #statistics_M{
+    font-family: 'Lobster', cursive;
+    padding: 60px 0 18px 0;
+    color: #352D35;
+  }
+  .statisticsClass_M{
+    font-weight: 700;
+    color: #AF5807;
+  }
+  /* <ul> */
+  #alphabet_M{
+    clear: both;
+    list-style: none;
+  }
+    #alphabet_M li{
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      display: inline-block;
+      margin: 4px;
+      border: 1px solid black;
+      border-radius: 5px;       
+      text-transform: capitalize;
+    }
+  .alphabetActive_M{
+    background: #879797;
+  }
+  .alphabetActive_M:hover{
+    cursor: pointer;
+    background: #9EA8A9;
+  }
+  .alphabetInactive_M{
+    background: #352D35;  
+  }
+
+  #message_M span{
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+    color: #352D35;
+  }
+
+
+  #changeWord_M{
+    width: 270px;
+    height: 30px;
+    line-height: 30px;
+    margin: 20px auto;
+    background: #356A6D;
+    font-family: 'Lobster', cursive;
+    box-shadow: 0px 0px 2px 1px rgba(3,0,3,1);
+    border-radius: 5px;
+  }
+
+  #changeWord_M:hover{
+    background: #3C787B;
+    cursor: pointer;
+  }
+
+
+footer{
+  clear: both;
+  width: 320px;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+}
+
+@media screen and (max-width: 639px) {
+  #wrapper_M{
+    max-width: 320px;
+    height: auto;
+  }
+  #left_M, #right_M{
+  height: auto;
+  }
+}
